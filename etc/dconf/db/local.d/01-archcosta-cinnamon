@@ -6,6 +6,53 @@ panels-height=['1:40']
 next-applet-id=15
 desktop-effects-workspace=false
 startup-animation=false
+desktop-effects=true
+desktop-effects-on-dialogs=true
+desktop-effects-on-menus=true
+desktop-effects-style='cinnamon'
+
+[org/cinnamon/desktop/keybindings]
+looking-glass-keybinding=@as []
+show-desklets=@as []
+
+[org/cinnamon/desktop/keybindings/media-keys]
+terminal=['<Super>Return', '<Super>t']
+home=['<Super>e']
+www=['<Super>w']
+screensaver=['<Super>l']
+screenshot=['Print']
+area-screenshot=['<Shift>Print']
+window-screenshot=['<Alt>Print']
+screenshot-clip=['<Control>Print']
+area-screenshot-clip=['<Control><Shift>Print']
+
+[org/cinnamon/desktop/keybindings/wm]
+close=['<Alt>F4']
+minimize=['<Super>h']
+toggle-maximized=['<Super>f']
+move-to-workspace-left=['<Super><Shift>Left']
+move-to-workspace-right=['<Super><Shift>Right']
+switch-to-workspace-left=['<Super><Control>Left']
+switch-to-workspace-right=['<Super><Control>Right']
+switch-to-workspace-1=['<Super>1']
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-3=['<Super>3']
+switch-to-workspace-4=['<Super>4']
+push-tile-left=['<Super>Left']
+push-tile-right=['<Super>Right']
+push-tile-up=['<Super>Up']
+push-tile-down=['<Super>Down']
+
+[org/cinnamon/hotcorner]
+hotcorner-layout=['expo:false:0', 'scale:false:0', 'desktop:false:0', 'gnome-screenshot:false:0']
+
+[org/cinnamon/muffin]
+placement-mode='center'
+tile-hud-threshold=25
+resize-threshold=24
+edge-tiling=true
+workspaces-only-on-primary=true
+unredirect-fullscreen-windows=true
 
 [org/cinnamon/desktop/interface]
 gtk-theme='Arc-Dark'
@@ -78,8 +125,29 @@ sources=[('xkb', 'us')]
 font='JetBrainsMono Nerd Font 10'
 use-system-font=false
 use-theme-colors=false
-foreground-color='#d3d7cf'
+foreground-color='#e0e0e0'
 background-color='#1a1a2e'
 bold-is-bright=true
 audible-bell=false
 scrollback-unlimited=true
+palette=['#1a1a2e', '#ff5555', '#50fa7b', '#f1fa8c', '#00b4d8', '#bd93f9', '#22b8cf', '#e0e0e0', '#44475a', '#ff6e6e', '#69ff94', '#ffffa5', '#48cae4', '#d6acff', '#44d1e0', '#f8f8f2']
+cursor-blink-mode='on'
+cursor-shape='block'
+default-size-columns=110
+default-size-rows=30
+
+[org/cinnamon/desktop/session]
+idle-delay=uint32 300
+
+[org/cinnamon/desktop/a11y/keyboard]
+togglekeys-enable=false
+stickykeys-enable=false
+
+[org/cinnamon/theme]
+name='Arc-Dark'
+theme-cache-updated=0
+
+[org/cinnamon/desktop/notifications]
+display-notifications=true
+bottom-notifications=false
+remove-old=true
